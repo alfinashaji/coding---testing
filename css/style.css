@@ -27,6 +27,12 @@
   font-weight: 700;
 }
 
+.headdings {
+  color: #7868e6;
+  font-size: 70px;
+  font-weight: 700;
+}
+
 .banner h2 {
   font-size: 3.5vw;
   font-weight: 700;
@@ -34,6 +40,11 @@
 
 .banner p {
   font-size: 1.2vw;
+}
+
+.fontsetting {
+  font-size: 70px;
+  font-weight: 700;
 }
 
 /* Responsive positioning */
@@ -218,7 +229,8 @@
   border-radius: 20px;
   position: relative;
   overflow: hidden;
-  background: url("../images/Capa\ 1.png") no-repeat center center/cover;
+  background: url("../images/Capa 1.png") no-repeat center center;
+  background-size: cover;
 }
 .feature-card {
   background: rgba(255, 255, 255, 0.15);
@@ -287,6 +299,11 @@
   .banner p {
     font-size: 1rem;
   }
+  .feature-section {
+    background-position: center top;
+    background-size: contain; /* Ensures the full image is visible */
+    padding: 40px 15px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -295,12 +312,51 @@
     display: none; /* Hide arrows on small screens if they overlap */
   }
 
-  .banner h1 span,
-  .banner h2 {
-    font-size: 6vw;
+  .headdings {
+    font-size: 33px;
   }
 
   .banner p {
-    font-size: 0.9rem;
+    font-size: 3vw;
+  }
+
+  .phone-img {
+    max-width: 170px;
+  }
+
+  .floating-cards {
+    width: 120px;
+  }
+
+  .right .floating-card:nth-child(1) {
+    width: 67px;
+  }
+
+  .left .floating-card:nth-child(2) {
+    width: 70px;
+  }
+
+  .right .floating-card:nth-child(1) {
+    transform: rotate(-1deg) translate(-11px, -20px);
+  }
+
+  .left .floating-card:nth-child(2) {
+    transform: rotate(-3deg) translate(35px, 35px);
+    z-index: 3;
+  }
+
+  .right .floating-card:nth-child(2) {
+    transform: rotate(-1deg) translate(-10px, 30px);
+    z-index: 3;
+  }
+
+  .fontsetting {
+    font-size: 35px;
+  }
+
+  .feature-section {
+    background-position: center;
+    background-size: contain;
+    padding: 30px 10px;
   }
 }
