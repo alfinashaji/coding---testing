@@ -68,15 +68,11 @@
         </div>
       </div>
     </nav>
+
+    <!-- banner start -->
     <div class="banner text-center ps-5 pe-5">
-      <h1>
-        <span style="color: #7868e6; font-size: 70px; font-weight: 700"
-          >Passport OCR SDK</span
-        >
-      </h1>
-      <h2 class="fw-bold" style="font-size: 70px; font-weight: 700">
-        unmatched cost efficiency
-      </h2>
+      <h1 class="headdings">Passport OCR SDK</h1>
+      <h2 class="fw-bold fontsetting">unmatched cost efficiency</h2>
 
       <div class="d-flex flex-column align-items-center">
         <p class="text-muted text-center">
@@ -129,7 +125,7 @@
             <img
               src="images/Frame 1171275290.png"
               alt="phoneimage"
-              class="img-fluid phone-img"
+              class="phone-img"
             />
           </div>
 
@@ -231,19 +227,21 @@
         Authentication of<br />
         <span class="text-primary">Identity Documents</span>
       </h2>
-      <div class="container py-5 d-flex">
-        <div>
-          <div class="container py-5">
+      <div class="container py-5">
+        <div class="row d-flex flex-column flex-md-row">
+          <!-- First Box -->
+          <div class="col-12 col-md-6 d-flex justify-content-center">
             <div class="first-card-custom p-4">
               <img
                 src="images/NFC-based document verification.png"
                 alt="passportimage"
+                class="img-fluid"
               />
             </div>
           </div>
-        </div>
-        <div>
-          <div class="container py-5">
+
+          <!-- Second Box -->
+          <div class="col-12 col-md-6">
             <div class="card-custom p-4">
               <h5 class="fw-bold">
                 NFC-Based Document Verification <span class="float-end">↗</span>
@@ -257,6 +255,7 @@
                 authentication process, making it more efficient.
               </p>
 
+              <!-- Accordion -->
               <div class="accordion mt-3" id="documentAccordion">
                 <div class="accordion-item">
                   <h2 class="accordion-header">
@@ -350,6 +349,7 @@
                   </div>
                 </div>
               </div>
+              <!-- End Accordion -->
             </div>
           </div>
         </div>
@@ -358,26 +358,33 @@
 
     <!-- Fourth section -->
 
-    <div class="container ps-5 pe-5">
-      <div style="background-color: #695fd9" class="ps-5 pe-5 rounded-4">
+    <div class="container px-3 px-md-5 py-4">
+      <div
+        style="background-color: #695fd9"
+        class="px-3 px-md-5 py-4 rounded-4"
+      >
         <div class="feature-section text-white text-center">
           <h2 class="fw-bold">Key Features of Passport SDK.</h2>
           <div class="row mt-4 g-4">
-            <div class="col-md-4">
+            <div class="col-12 col-sm-6 col-md-4">
               <div class="feature-card p-4 text-start">
-                <img src="images/ic_outline-plus.png" alt="firsticon" />
-
+                <img
+                  src="images/ic_outline-plus.png"
+                  alt="firsticon"
+                  class="img-fluid"
+                />
                 <h5 class="mt-3" style="font-size: 18px">Mobile SDK</h5>
                 <p style="font-size: 13px">
                   Seamless integration into mobile apps.
                 </p>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-12 col-sm-6 col-md-4">
               <div class="feature-card p-4 text-start">
                 <img
                   src="images/material-symbols-light_activity-zone-outline (1).png"
-                  alt="firsticon"
+                  alt="secondicon"
+                  class="img-fluid"
                 />
                 <h5 class="mt-3" style="font-size: 18px">
                   Offline Data Processing
@@ -387,11 +394,12 @@
                 </p>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-12 col-sm-6 col-md-4">
               <div class="feature-card p-4 text-start">
                 <img
                   src="images/material-symbols-light_activity-zone-outline (1).png"
-                  alt="firsticon"
+                  alt="thirdicon"
+                  class="img-fluid"
                 />
                 <h5 class="mt-3" style="font-size: 18px">
                   Document Database Comparison
